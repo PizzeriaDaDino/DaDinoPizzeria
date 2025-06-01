@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+
+<html lang="de">
+
+<head>
+
+<meta charset="UTF-8" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>DA DINO Pizzeria</title>
+
+<style>
+
+  body {
+
+    margin: 0;
+
+    background-color: #121212;
+
+    color: white;
+
+    font-family: 'Arial', sans-serif;
+
+  }
+
+  main {
+
+    max-width: 700px;
+
+    margin: 30px auto;
+
+    padding: 0 15px;
+
+  }
+
+  header {
+
+    text-align: center;
+
+    margin-bottom: 30px;
+
+  }
+
+  header img {
+
+    width: 220px;
+
+    height: auto;
+
+    background-color: #121212;
+
+    display: inline-block;
+
+  }
+
+  h1 {
+
+    font-weight: 700;
+
+    margin: 10px 0 0 0;
+
+  }
+
+  section {
+
+    margin-bottom: 50px;
+
+  }
+
+  section h2 {
+
+    font-weight: 600;
+
+    margin-bottom: 15px;
+
+  }
+
+  .item {
+
+    background: #1e1e1e;
+
+    border-radius: 10px;
+
+    padding: 20px;
+
+    text-align: center;
+
+  }
+
+  .item img {
+
+    max-width: 100%;
+
+    border-radius: 8px;
+
+    height: auto;
+
+  }
+
+  .order-btn {
+
+    margin-top: 15px;
+
+    padding: 12px 28px;
+
+    background: white;
+
+    color: #121212;
+
+    font-weight: 700;
+
+    border: none;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    transition: background 0.3s ease;
+
+  }
+
+  .order-btn:hover {
+
+    background: #ddd;
+
+  }
+
+  footer {
+
+    text-align: center;
+
+    margin: 40px 0 20px 0;
+
+    font-weight: 600;
+
+  }
+
+  footer .footer-main {
+
+    font-size: 1.3em;
+
+  }
+
+  footer .footer-sub {
+
+    font-size: 1em;
+
+    margin-top: 6px;
+
+  }
+
+  #contact {
+
+    text-align: center;
+
+  }
+
+  #contact p {
+
+    margin: 4px 0;
+
+  }
+
+  #contact .email {
+
+    color: white;
+
+    font-weight: 600;
+
+  }
+
+  #contact .opening {
+
+    font-weight: 900;
+
+    margin-top: 6px;
+
+  }
+
+  @media (max-width: 480px) {
+
+    main {
+
+      margin: 15px 12px;
+
+    }
+
+    header img {
+
+      width: 180px;
+
+    }
+
+    .order-btn {
+
+      width: 100%;
+
+      box-sizing: border-box;
+
+    }
+
+  }
+
+</style>
+
+</head>
+
+<body>
+
+  <main>
+
+    <header>
+
+      <!-- Logo Base64 -->
+
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAABkCAYAAADckDkzAAAAGXRFWHRTb2Z0d2FyZQBwYWludC5uZXQgNC4yLjExqTUZNAAABb0lEQVR4nO3UsQ3CMAwFUJz/7xXTykOcS1Rg+FMtD8CxWllPrn0JjzsdS3ILmYnk+n9NoRBEEQBEEQBEEQpDfdDHC+5F4PzJxHqvnUN9zx5WuGqzTnHe63DyM8k6RjyN4ixs5LpGORU6hEHlZrpU5LpGISUYgT89y0qdEcypQZlpKoR3IqFWclJhB9GhE/nPz0rNkk/SviR7S+pyQzjEoWZzSeYchZm4TyWzTnG+Tos45l1yrhHYfEbPN97ruV6RkhIh/x68QpHbJEY1XnMzbhLRH8elBJUQBEETJUtLK0p3UyXQpIQXqfOkxELU58E8bPvJ5O1SXV0W2yd6O6H9xZXM6d1ryqIAAAAASUVORK5CYII=" alt="DA DINO Logo" />
+
+      <h1>DA DINO</h1>
+
+    </header>
+
+
+
+    <section id="pizza">
+
+      <h2>Pizza</h2>
+
+      <div class="item">
+
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAM1BMVEVHcEyUlJX///+WlpYAAACkpKSnp6eZmZmcHBwAAACLi4vp6em+vr6urq7c3NzPz8/GxsbAwMDx8fGb2+O1AAAF1klEQVR4nO3UsQ3CMAwFUJz/7xXTykOcS1Rg+FMtD8CxWllPrn0JjzsdS3ILmYnk+n9NoRBEEQBEEQBEEQpDfdDHC+5F4PzJxHqvnUN9zx5WuGqzTnHe63DyM8k6RjyN4ixs5LpGORU6hEHlZrpU5LpGISUYgT89y0qdEcypQZlpKoR3IqFWclJhB9GhE/nPz0rNkk/SviR7S+pyQzjEoWZzSeYchZm4TyWzTnG+Tos45l1yrhHYfEbPN97ruV6RkhIh/x68QpHbJEY1XnMzbhLRH8elBJUQBEETJUtLK0p3UyXQpIQXqfOkxELU58E8bPvJ5O1SXV0W2yd6O6H9xZXM6d1ryqIAAAAASUVORK5CYII=" alt="Pizza" />
+
+        <p>Unsere klassischen Pizzen, frisch und knusprig aus dem Steinofen.</p>
+
+        <button class="order-btn">Jetzt vorbestellen</button>
+
+      </div>
+
+    </section>
+
+
+
+    <section id="pasta">
+
+      <h2>Pasta</h2>
+
+      <div class="item">
+
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAABkCAYAAADckDkzAAAAN0lEQVR4nO3BMQEAAAgDINc/9K3hFBpA44mKRpJRIhEIkUqRJIlTKJIUlTKJIUlTKJIUlTKJIUlTKJIUlTKJInT8B2FiYyr3N1wAAAABJRU5ErkJggg==" alt="Pasta" />
+
+        <p>Frische hausgemachte Pasta mit leckeren Saucen.</p>
+
+        <button class="order-btn">Jetzt vorbestellen</button>
+
+      </div>
+
+    </section>
+
+
+
+    <section id="contact">
+
+      <h2>Kontakt & Eröffnung</h2>
+
+      <p class="email">info@dadino.ch</p>
+
+      <p class="opening">Eröffnung: Bald!</p>
+
+    </section>
+
+
+
+    <footer>
+
+      <div class="footer-main">DA DINO</div>
+
+      <div class="footer-sub">Pizza & Pasta</div>
+
+    </footer>
+
+  </main>
+
+</body>
+
+</html>
