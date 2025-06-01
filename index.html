@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DA DINO – Pizza & Pasta</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Work Sans', sans-serif;
+      background: #111;
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: url('https://cdn.pixabay.com/photo/2021/09/28/12/59/pizza-6665393_1280.jpg') center/cover no-repeat;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+    }
+    header img {
+      position: relative;
+      z-index: 2;
+      max-width: 380px;
+      margin-bottom: 20px;
+    }
+    header h1 {
+      z-index: 2;
+      position: relative;
+      font-size: 4rem;
+      color: #39a14a; /* Green City Grün */
+      font-family: 'Work Sans', sans-serif; /* minimalistisch wie Logo */
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+    nav {
+      position: sticky;
+      top: 0;
+      background: #222;
+      padding: 15px 0;
+      text-align: center;
+      z-index: 99;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav a:hover {
+      color: #39a14a; /* Hover in grün */
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+      color: #39a14a;
+    }
+    footer {
+      background: #222;
+      color: #ccc;
+      padding: 30px;
+      text-align: center;
+      font-size: 14px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      margin-bottom: 20px;
+    }
+    a.button {
+      background: #39a14a;
+      color: #000;
+      padding: 12px 24px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 20px;
+    }
+    a.button:hover {
+      background: #2e7d36;
+      color: #fff;
+    }
+    img {
+      border-radius: 12px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="da-dino.png" alt="DA DINO Logo" />
+    <h1>DA DINO</h1>
+    <p style="color:#fff; margin-top:10px; font-size: 1.4rem; font-family: 'Playfair Display', serif;">Pizza & Pasta im Herzen von Green City</p>
+  </header>
+
+  <nav>
+    <a href="#ueber">Über Uns</a>
+    <a href="#pizza">Pizza</a>
+    <a href="#pasta">Pasta</a>
+    <a href="#dessert">Dessert</a>
+    <a href="#wein">Wein</a>
+    <a href="#bier">Bier</a>
+    <a href="#kaffee">Kaffee</a>
+    <a href="#getraenke">Getränke</a>
+  </nav>
+
+  <section id="ueber">
+    <h2>Über DA DINO</h2>
+    <p>DA DINO steht für italienische Herzlichkeit, handgemachte Pasta und nachhaltige Küche. Komm vorbei und erlebe mediterranen Genuss in Zürichs Green City.</p>
+  </section>
+
+  <section id="pizza">
+    <h2>Pizza</h2>
+    <p>Frisch, knusprig und mit besten Zutaten direkt aus der Region – das ist Pizza von DA DINO. Ob klassisch oder kreativ, bei uns findet jeder seinen Lieblingsbelag.</p>
+    <img src="https://cdn.pixabay.com/photo/2017/12/09/08/18/pizza-3007395_1280.jpg" alt="Frische Pizza" />
+    <a href="#kontakt" class="button">Jetzt vorbestellen</a>
+  </section>
+
+  <section id="pasta">
+    <h2>Pasta</h2>
+    <p>Unsere handgemachte Pasta wird täglich frisch zubereitet. Genieße traditionelle italienische Rezepte mit hochwertigen Zutaten.</p>
+    <img src="https://cdn.pixabay.com/photo/2017/06/02/18/24/pasta-2369997_1280.jpg" alt="Hausgemachte Pasta" />
+    <a href="#kontakt" class="button">Jetzt vorbestellen</a>
+  </section>
+
+  <section id="dessert">
+    <h2>Dessert</h2>
+    <p>Von Tiramisu bis Panna Cotta – unsere italienischen Desserts runden dein Menü perfekt ab.</p>
+    <img src="https://cdn.pixabay.com/photo/2017/04/15/11/39/tiramisu-2221531_1280.jpg" alt="Italienisches Dessert" />
+    <a href="#kontakt" class="button">Jetzt bestellen</a>
+  </section>
+
+  <section id="wein">
+    <h2>Wein</h2>
+    <p>Unsere Auswahl an italienischen Weinen passt perfekt zu unseren Gerichten.</p>
+    <!-- Animation mit realistischem Weinglas ist komplex; hier Platzhalter mit Bild -->
+    <img src="https://cdn.pixabay.com/photo/2017/02/12/14/17/wine-glass-2059229_1280.png" alt="Weinglas" style="max-width: 150px; margin-top: 20px;">
+  </section>
+
+  <section id="bier">
+    <h2>Bier</h2>
+    <p>Unsere Bierauswahl mit klassischen Favoriten:</p>
+    <ul>
+      <li>
+        <strong>Feldschlösschen</strong><br>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Feldschl%C3%B6sschen_Logo.png" alt="Feldschlösschen Bier" style="height: 80px; margin-top: 8px;">
+      </li>
+      <li>
+        <strong>Birra Moretti</strong><br>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Birra_Moretti_Logo.svg" alt="Birra Moretti" style="height: 80px; margin-top: 8px;">
+      </li>
+    </ul>
+  </section>
+
+  <section id="kaffee">
+    <h2>Kaffee</h2>
+    <p>Frisch gebrühter italienischer Kaffee – perfekt für jeden Moment des Tages.</p>
+    <img src="https://cdn.pixabay.com/photo/2016/03/05/19/02/coffee-1239240_1280.jpg" alt="Italienischer Kaffee" style="max-width: 300px; margin-top: 10px;">
+  </section>
+
+  <section id="getraenke">
+    <h2>Getränke</h2>
+    <p>Wir bieten auch eine Auswahl an italienischen Getränken an:</p>
+    <ul>
+      <li>
+        <strong>Aperol Spritz</strong><br>
+        <img src="https://cdn.pixabay.com/photo/2017/07/31/11/33/aperol-spritz-2551326_1280.jpg" alt="Aperol Spritz
+
